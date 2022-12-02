@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navi',
   templateUrl: './navi.component.html',
   styleUrls: ['./navi.component.css']
 })
-export class NaviComponent {
+export class NaviComponent implements OnInit {
+
+  ngOnInit(): void {
+
+  }
 
 }

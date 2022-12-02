@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
@@ -11,7 +11,7 @@ import { ResponseModel } from 'src/app/models/responseModel';
   templateUrl: './product-add.component.html',
   styleUrls: ['./product-add.component.css']
 })
-export class ProductAddComponent {
+export class ProductAddComponent implements OnInit {
   productAddForm: FormGroup | undefined;
   
   constructor(

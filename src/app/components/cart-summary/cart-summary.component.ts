@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CartItem } from 'src/app/models/cartItem';
 import { Product } from 'src/app/models/product';
 import { CartService } from 'src/app/services/cart.service';
@@ -9,7 +9,7 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './cart-summary.component.html',
   styleUrls: ['./cart-summary.component.css']
 })
-export class CartSummaryComponent {
+export class CartSummaryComponent implements OnInit {
 
     cartItems: CartItem[] = [];
 
